@@ -7,3 +7,5 @@ $(document).ready(function() {
       $('#under-16').show();
     }
   });
+
+  var flavor = $("input:radio[name=flavor]:checked").val();
