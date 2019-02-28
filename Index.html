@@ -44,7 +44,7 @@
 
           <div class="row">
               <div class="col-md-6">
-                <h2>You just said:</h2>
+                <h5>You just said:</h5>
                 <ul class="unstyled" id="user">
 
                   <li>Daniel Craig</li>
@@ -55,15 +55,32 @@
               </div>
 
               <div class="col-md-6">
-                <h2>The web page said back:</h2>
+                <h5>The web page said back:</h5>
                 <ul class="webpage" id="webpage">
 
                   <li>Looks a like a blonde chimp!</li>
                   <li>Some of his movies were good</li>
                   <li>Also pretty good</li>
 
-                </div>
-              </div>
+                </ul>
             </div>
-          </body>
-        </html>
+
+            <div class="container">
+              <h6>Chance to win Lottery</h6>
+
+              <p>To win big, tell us everything or die!:</p>
+
+              <form id="cash">
+                <label for="age">Age</label>
+                <input id="age" type="text">
+                <label for="gender">Sex, yes please! (just kidding)</label>
+                <select id="gender">
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                </select>
+
+                <button type="submit" class="btn">Calculate my quote</button>
+              </form>
+
+              <div id="cash">
+                <p>You got $<span id="lottery"></span>. Better luck next time</p>

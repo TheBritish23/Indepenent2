@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $("button#hello").click(function() {
     $("ul#user").prepend("<li>Daniel Craig</li>");
     $("ul#webpage").prepend("<li>Looks a like a blonde chimp</li>");
@@ -27,4 +26,25 @@ $(document).ready(function() {
       $('li').css('background-color', 'green');
     });
   });
-});
+
+  $(document).ready(function() {
+    $("form#lottery").submit(function(event) {
+        var age = parseInt($("input#age").val());
+        var gender = $("select#gender").val();
+
+        if (age) {
+          var cash = (100 - age) * 3;
+          if (gender === 'male' && age < 26) {
+            cash += 50;
+          }
+
+          $("#lottery").empty().append(quote);
+          $("#cash").show();
+        } else {
+          alert('Please enter your age.');
+        }
+
+        event.preventDefault();
+      });
+    });
+  });
