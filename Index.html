@@ -11,6 +11,7 @@
     <div class="container">
       <h1>Click fo info</h1>
       <p> This will show how much I learned (hopefully) (most likely i didn't)</p>
+      <p> Name's Soroush. Can't decide whether you like CSS or the others. Well take a look.</p>
 
         <div class="col-md-10 margin-left">
           <div class="well">
@@ -66,24 +67,44 @@
             </div>
 
             <div class="container">
-              <h6>Chance to win Lottery</h6>
-
-              <p>To win big, tell us everything or die!:</p>
-
-              <form id="cash">
-                <label for="age">Age</label>
-                <input id="age" type="text">
-                <label for="gender">Sex, yes please! (just kidding)</label>
-                <select id="gender">
-                  <option value="female">Female</option>
-                  <option value="male">Male</option>
-                </select>
-
-                <button type="submit" class="btn">Calculate my quote</button>
+              <h1>Calculator (again)</h1>
+              <p>An example of Javascript: retrieving information from HTML forms</p>
+              <form id="calculator">
+                <div class="form-group">
+                  <label for="input1">1st number:</label>
+                  <input id="input1" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="input2">2nd number:</label>
+                  <input id="input2" class="form-control" type="text">
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="operator" value="add" checked>
+                    Add
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="operator" value="subtract">
+                    Subtract
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="operator" value="multiply">
+                    Multiply
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="operator" value="divide">
+                    Divide
+                  </label>
+                </div>
+                <button type="submit" class="btn">Go!</button>
               </form>
-
-              <div id="cash">
-                <p>You got $<span id="lottery"></span>. Better luck next time</p>
+              <div id="output">
 
                 <div class="container">
                     <h3>What's your favorite color?</h3>
