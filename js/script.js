@@ -1,40 +1,29 @@
 $(document).ready(function() {
-  var over16 = confirm("Are you over 16? Click OK for yes or Cancel for no.");
 
-    if (over16) {
-      $('#drinks').show();
-    } else {
-      $('#under-16').show();
-    }
-  });
-
-  var flavor = $("input:radio[name=flavor]:checked").val();
-
-  $(document).ready(function() {
   $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>");
+    $("ul#user").prepend("<li>Daniel Craig</li>");
+    $("ul#webpage").prepend("<li>Looks a like a blonde chimp</li>");
     $('li').click(function() {
-      alert('hi');
+      alert('Mediocre');
       $('li').css('background-color', 'green');
     });
   });
 
 
   $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Goodbye, dear user!</li>");
+    $("ul#user").prepend("<li>Roger Moore</li>");
+    $("ul#webpage").prepend("<li>Some of his movies were good</li>");
     $('li').click(function() {
-      alert('See Ya!');
+      alert('Good');
       $('li').css('background-color', 'green');
     });
   });
 
   $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
+    $("ul#user").prepend("<li>Pierce Brosnan</li>");
+    $("ul#webpage").prepend("<li>Also pretty good</li>");
     $('li').click(function() {
-      alert('Hey!');
+      alert('good');
       $('li').css('background-color', 'green');
     });
   });
