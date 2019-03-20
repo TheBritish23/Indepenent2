@@ -16,146 +16,64 @@
         <div class="col-md-10 margin-left">
           <div class="well">
             <h3>What work enviroment do you prefer?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="enviroment" value="Home" checked>
-                <li>1. Home</li>
-                <input type="radio" name="enviroment" value="Office" checked>
-                <li>2. Office</li>
-              </label>
-            </div>
-
-        <div class="container">
-          <h4>Which Bond is better</h4>
-          <p>Click on a button and see what pops up!</p>
-
-          <button class="btn btn-primary" id="hello">Say "Daniel Craig"</button>
-          <button class="btn btn-inverse" id="goodbye">Say "Roger Moore"</button>
-          <button class="btn btn-danger" id="stop">Say "Pierce Brosnan"</button>
-
-          <div class="row">
-              <div class="col-md-6">
-                <h5>You just said:</h5>
-                <ul class="unstyled" id="user">
-
-                  <li>Daniel Craig</li>
-                  <li>Roger Moore</lI>
-                  <li>Pierce Brosnan</li>
-
-                  </ul>
-              </div>
-
-              <div class="col-md-6">
-                <h5>The web page said back:</h5>
-                <ul class="webpage" id="webpage">
-
-                  <li>Looks a like a blonde chimp!</li>
-                  <li>Some of his movies were good</li>
-                  <li>Also pretty good</li>
-
-                </ul>
-            </div>
-
-            <div class="container">
-              <h1>Calculator (again)</h1>
-              <p>An example of Javascript: retrieving information from HTML forms</p>
-              <form id="calculator">
-                <div class="form-group">
-                  <label for="input1">1st number:</label>
-                  <input id="input1" class="form-control" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="input2">2nd number:</label>
-                  <input id="input2" class="form-control" type="text">
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="operator" value="add" checked>
-                    Add
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="operator" value="subtract">
-                    Subtract
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="operator" value="multiply">
-                    Multiply
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="operator" value="divide">
-                    Divide
-                  </label>
-                </div>
-                <button type="submit" class="btn">Go!</button>
-              </form>
-              <div id="output">
-
-                <div class="container">
-                    <h3>What's your favorite color?</h3>
-                    <p>Here's an example of Jquery: Adding or removing classes to add an effect</p>
-
-                    <button class="btn btn-success" id="green">Green</button>
-                    <button class="btn btn-warning" id="yellow">Yellow</button>
-                    <button class="btn btn-danger" id="red">Red</button>
-                  </div>
-
-                  <div class="container">
-                    <h1>Solve these questions</h1>
-                    <p>This is an example of HTML: using the web browser to display content and style it with CSS. Plug them into the console in developer tools and find out.</p>
-                  <li>4/12</li>
-                  <li>9+3</li>
-                  <li>10*71</li>
-                  <li>-6+8</li>
-                </div>
-
-                <h2>So, Which one do you like most?</h2>
-
-                <div class="col-md-10 margin-left">
-                  <div class="well">
-                    <div class="radio">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="coding" value="HTML" checked>
-                          HTML
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="coding" value="CSS" checked>
-                          CSS
-                        </label>
-                      </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="coding" value="Javascript" checked>
-                            Javascript
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="coding" value="Javascript" checked>
-                            jQuery
-                          </label>
-                        </div>
-
-                  <div class="container">
-                    <h2>Which course?</h2>
-                    <ul>if you chose HTML, you might be more interested in PHP</ul>
-                    <ul>if you chose CSS, you might be more interested in C#</ul>
-                    <ul>if you chose Javascript, you might be more interested in Ruby</ul>
-                    <ul>if you chose Jquery, you might be more interested in Java</ul>
-                  </div>
-
-                </div>
+            <form id="quiz">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="enviroment" value="Home" checked>
+                  <li>Home</li>
+                  <input type="radio" name="enviroment" value="Office" checked>
+                  <li>Office</li>
+                </label>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </html>
+
+          <div class="col-md-10 margin-left">
+            <div class="well">
+              <h3>What kind of office would you prefer?</h3>
+              <form id="quiz">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="enviroment" value="Modest" checked>
+                    <li>Modest</li>
+                    <input type="radio" name="enviroment" value="Medium" checked>
+                    <li>Medium</li>
+                    <input type="radio" name="enviroment" value="Big" checked>
+                    <li>BIG(I want it all!)</li>
+                  </label>
+                </div>
+              </div>
+
+
+          <div class="col-md-10 margin-left">
+           <div class="well">
+             <h3>Are you comfortable with Work Buddies?</h3>
+             <form id="quiz">
+               <div class="radio">
+               <label>
+                 <input type="radio" name="enviroment" value="Yes" checked>
+                 <li>Yes</li>
+                 <input type="radio" name="enviroment" value="Unknown" checked>
+                 <li>Depends on who they are.</li>
+                 <input type="radio" name="enviroment" value="No" checked>
+                 <li>Hell no!!!</li>
+               </label>
+             </div>
+           </div>
+
+           <div class="col-md-10 margin-left">
+            <div class="well">
+              <h3>Where do you want apply programming?</h3>
+              <form id="quiz">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="coding" value="Internal Software" checked>
+                    <li>Internal Software</li>
+                    <input type="radio" name="coding" value="User Interface" checked>
+                    <li>User Interface</li>
+                    <input type="radio" name="coding" value="Content Managment" checked>
+                    <li>Content Managment</li>
+                    <input type="radio" name="coding" value="Interavctive Web Applications" checked>
+                    <li>Interavctive Web Applications</li>
+                  </label>
+                </div>
+              </div>
