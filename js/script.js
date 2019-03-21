@@ -1,90 +1,46 @@
+var php = 0;
+var csharp = 0;
+var ruby = 0;
+var java = 0;
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Daniel Craig</li>");
-    $("ul#webpage").prepend("<li>Looks a like a blonde chimp</li>");
-    $('li').click(function() {
-      alert('Mediocre');
-      $('li').css('background-color', 'green');
-    });
-  });
+  $("form#quiz").submit(function(event){
+    event.preventDefault();
+    var Q1 = $("input:radio[name=enviroment]:checked").val();
+    var Q2 = $("input:radio[name=Area]:checked").val();
+    var Q3 = $("input:radio[name=reliance]:checked").val();
+    var Q4 = $("input:radio[name=coding]:checked").val();
+    var Q5 = $("input:radio[name=computer]:checked").val();
+    console.log(Q1)
+    console.log(Q2)
+    console.log(Q3)
+    console.log(Q4)
+    console.log(Q5)
+    if(Q1==="home"){
+       csharp++;
+    } else if(Q1==="office"){
+       ruby++;
+    } else if(Q1==="both"){
+       java++;
+    if(Q2==="modest"){
+       php++;
+    } else if(Q2==="medium"){
+       css++;
+    } else if(Q2==="BIG(🎵I want it all!🎵)"){
+       java++;
+    if(Q3==="yes"){
+       php++;
+    } else if(Q3==="Depends on who they are."){
+       csharp++;
+    } else if(Q3==="Hell no!!"){
+       css++;
+    if(Q4==="internal software"){
+       csharp++;
+    } else if(Q4==="user interface"){
+       java++;
+    } else if(Q4==="content management"){
+       php++;
+                       
 
-
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Roger Moore</li>");
-    $("ul#webpage").prepend("<li>Some of his movies were good</li>");
-    $('li').click(function() {
-      alert('Good');
-      $('li').css('background-color', 'green');
-    });
-  });
-
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Pierce Brosnan</li>");
-    $("ul#webpage").prepend("<li>Also pretty good</li>");
-    $('li').click(function() {
-      alert('good');
-      $('li').css('background-color', 'green');
-    });
-  });
-
-  // Business logic not included because it will remain the same.
-
-  var add = function(number1, number2) {
-    return number1 + number2;
-  };
-
-  var subtract = function(number1, number2) {
-    return number1 - number2;
-  };
-
-  var multiply = function(number1, number2) {
-    return number1 * number2;
-  };
-
-  var divide = function(number1, number2) {
-    return number1 / number2;
-  };
-
-
-
-
-  $(document).ready(function() {
-    $("form#calculator").submit(function() {
       event.preventDefault();
-      var number1 = parseInt($("#input1").val());
-      var number2 = parseInt($("#input2").val());
-      var operator = $("input:radio[name=operator]:checked").val();
-      var result;
-      if (operator === "add") {
-        result = add(number1, number2);
-      } else if (operator === "subtract") {
-        result = subtract(number1, number2);
-      } else if (operator === "multiply") {
-        result = multiply(number1, number2);
-      } else if (operator === "divide") {
-        result = divide(number1, number2);
-      }
-      $("#output").text(result);
-    });
+     });
    });
-
-    $(document).ready(function() {
-      $("button#green").click(function() {
-        $("body").removeClass();
-        $("body").css("background-color", "green");
-        $("body").addClass("green-background");
-      });
-
-      $("button#yellow").click(function() {
-        $("body").removeClass();
-        $("body").css("background-color", "yellow");
-        $("body").addClass("yellow-background");
-      });
-
-      $("button#red").click(function() {
-        $("body").removeClass();
-        $("body").css("background-color", "red");
-        $("body").addClass("red-background");
-      });
-    });
-  });
