@@ -10,3 +10,11 @@
 .red-background {
   background-color: red;
 }
+
+.btn {
+  display: block;
+}
+
+#quote {
+  display: none;
+}
