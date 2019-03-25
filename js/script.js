@@ -53,11 +53,15 @@ $(document).ready(function() {
     console.log(java)
     console.log(ruby)
 
-    $('results').append("<li>"(#:"+csharp+"</li>")
-    $('results').append("<li>"(java:"+java+"</li>")
-    $(".results").append("<li class='r-item'>C#"+csharp+"</li>")
+    $('results').append("<li>(#:"+csharp+"</li>");
+    $('results').append("<li>(java:"+java+"</li>");
+    $('results').append("<li>(php:"+php+"</li>");
+    $('results').append("<li>(ruby:"+ruby+"</li>");
+    $(".results").append("<li class='r-item'>C#"+csharp+"</li>");
+    $(".results").append("<li class='r-item'>java"+java+"</li>");
+    $(".results").append("<li class='r-item'>php"+php+"</li>");
+    $(".results").append("<li class='r-item'>ruby"+ruby+"</li>");
 
        event.preventDefault();
       });
     });
-  });
