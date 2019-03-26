@@ -3,11 +3,10 @@ h1 {
   color: blue;
 }
 
-h3 {
+h2 {
   font-style: sans-serif
-  color: red
+  color: red;
 }
-
 
 .btn {
   display: block;
