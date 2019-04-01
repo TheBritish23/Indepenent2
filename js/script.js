@@ -53,6 +53,9 @@ $(document).ready(function() {
     console.log(java)
     console.log(ruby)
 
+    $(".questions").hide()
+    $(".answers").show()
+
     $(".results").append("<li class='r-item'>C#"+csharp+"</li>");
     $(".results").append("<li class='r-item'>java"+java+"</li>");
     $(".results").append("<li class='r-item'>php"+php+"</li>");
